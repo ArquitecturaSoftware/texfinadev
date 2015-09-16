@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.btnNuevo = new System.Windows.Forms.Button();
+            this.btnActualizar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnNuevo
@@ -41,11 +42,22 @@
             this.btnNuevo.UseVisualStyleBackColor = true;
             this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
             // 
+            // btnActualizar
+            // 
+            this.btnActualizar.Location = new System.Drawing.Point(192, 116);
+            this.btnActualizar.Name = "btnActualizar";
+            this.btnActualizar.Size = new System.Drawing.Size(75, 23);
+            this.btnActualizar.TabIndex = 1;
+            this.btnActualizar.Text = "Actualizar";
+            this.btnActualizar.UseVisualStyleBackColor = true;
+            this.btnActualizar.Click += new System.EventHandler(this.btnActualizar_Click);
+            // 
             // frmAnticiposMnt
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 262);
+            this.Controls.Add(this.btnActualizar);
             this.Controls.Add(this.btnNuevo);
             this.Name = "frmAnticiposMnt";
             this.Text = "Anticipos de clientes";
@@ -56,5 +68,6 @@
         #endregion
 
         private System.Windows.Forms.Button btnNuevo;
+        private System.Windows.Forms.Button btnActualizar;
     }
 }

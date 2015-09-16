@@ -20,5 +20,10 @@ namespace TX_Almacen
         {
             ///Probando GibHub
         }
+
+        private void btnActualizar_Click(object sender, EventArgs e)
+        {
+            ///otro boton
+        }
     }
 }
