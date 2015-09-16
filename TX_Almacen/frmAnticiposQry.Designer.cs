@@ -191,9 +191,9 @@
             this.btnBuscar.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBuscar.Image = ((System.Drawing.Image)(resources.GetObject("btnBuscar.Image")));
             this.btnBuscar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnBuscar.Location = new System.Drawing.Point(658, 14);
+            this.btnBuscar.Location = new System.Drawing.Point(632, 10);
             this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(76, 27);
+            this.btnBuscar.Size = new System.Drawing.Size(85, 37);
             this.btnBuscar.TabIndex = 11;
             this.btnBuscar.Text = "Buscar";
             this.btnBuscar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -204,9 +204,9 @@
             // 
             this.txtDsCliente.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(242)))), ((int)(((byte)(251)))));
             this.txtDsCliente.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtDsCliente.Location = new System.Drawing.Point(353, 19);
+            this.txtDsCliente.Location = new System.Drawing.Point(325, 19);
             this.txtDsCliente.Name = "txtDsCliente";
-            this.txtDsCliente.Size = new System.Drawing.Size(257, 20);
+            this.txtDsCliente.Size = new System.Drawing.Size(285, 20);
             this.txtDsCliente.TabIndex = 1;
             this.txtDsCliente.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtdescripcion_KeyPress);
             // 
