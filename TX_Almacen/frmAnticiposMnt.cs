@@ -15,5 +15,10 @@ namespace TX_Almacen
         {
             InitializeComponent();
         }
+
+        private void btnNuevo_Click(object sender, EventArgs e)
+        {
+            ///Probando GibHub
+        }
     }
 }
