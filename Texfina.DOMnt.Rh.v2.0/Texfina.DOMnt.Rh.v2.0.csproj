@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B5D419A8-961F-43A9-ABA4-804461B3D9B8}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Texfina.DOMnt.Rh</RootNamespace>
+    <AssemblyName>Texfina.DOMnt.Rh.v2.0</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Afp.cs" />
+    <Compile Include="AfpComi.cs" />
+    <Compile Include="ConcepRemu.cs" />
+    <Compile Include="ConRemuCampo.cs" />
+    <Compile Include="ConRemuDet.cs" />
+    <Compile Include="DiaDescanso.cs" />
+    <Compile Include="Feriado.cs" />
+    <Compile Include="Liquidacion.cs" />
+    <Compile Include="LiquidacionDet.cs" />
+    <Compile Include="PerContraArch.cs" />
+    <Compile Include="PerHistoAprob.cs" />
+    <Compile Include="PerRemu.cs" />
+    <Compile Include="Hora.cs" />
+    <Compile Include="PerContrato.cs" />
+    <Compile Include="PerDepen.cs" />
+    <Compile Include="PerEducacion.cs" />
+    <Compile Include="PerExpeLabo.cs" />
+    <Compile Include="PerFoto.cs" />
+    <Compile Include="PerPlanilla.cs" />
+    <Compile Include="Personal.cs" />
+    <Compile Include="PerVacaDesca.cs" />
+    <Compile Include="PerVacaDescaDet.cs" />
+    <Compile Include="PerVacaProg.cs" />
+    <Compile Include="PerVacaProv.cs" />
+    <Compile Include="Planilla.cs" />
+    <Compile Include="PlanillaDet.cs" />
+    <Compile Include="PrestaCuota.cs" />
+    <Compile Include="Prestamo.cs" />
+    <Compile Include="ProcPlaCalc.cs" />
+    <Compile Include="ProcPlaHora.cs" />
+    <Compile Include="ProcPlani.cs" />
+    <Compile Include="ProcPlaReg.cs" />
+    <Compile Include="ProcPlaRes.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Subsidio.cs" />
+    <Compile Include="VarCalc.cs" />
+    <Compile Include="VarCalcDet.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Texfina.Core.Common.v2.0\Texfina.Core.Common.v2.0.csproj">
+      <Project>{CB42FA9B-A4A2-44CE-BCD3-833CEFDAD36C}</Project>
+      <Name>Texfina.Core.Common.v2.0</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Texfina.Core.Data.v2.0\Texfina.Core.Data.v2.0.csproj">
+      <Project>{BCB3134E-69E4-4604-99D6-E9F564F328B0}</Project>
+      <Name>Texfina.Core.Data.v2.0</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Texfina.DOMnt.Sy.v2.0\Texfina.DOMnt.Sy.v2.0.csproj">
+      <Project>{61DC3721-E34E-4948-BFE7-7C0C3833E2AA}</Project>
+      <Name>Texfina.DOMnt.Sy.v2.0</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Texfina.Entity.Rh.v2.0\Texfina.Entity.Rh.v2.0.csproj">
+      <Project>{D99D4633-F543-460C-98B9-01298EC89589}</Project>
+      <Name>Texfina.Entity.Rh.v2.0</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Texfina.Entity.Sy.v2.0\Texfina.Entity.Sy.v2.0.csproj">
+      <Project>{E7CD0DDD-9C24-4319-9234-9A27A0E2FE67}</Project>
+      <Name>Texfina.Entity.Sy.v2.0</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

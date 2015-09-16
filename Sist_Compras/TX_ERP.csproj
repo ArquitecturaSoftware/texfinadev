@@ -1,0 +1,606 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C02159D8-3FFC-4E3C-AE36-6A37BC8B84FF}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Sist_Compras</RootNamespace>
+    <AssemblyName>Sist_Compras</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>\\apliser\f%24\Proyectos\COMPRAS_VERSION NUEVA\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Unc</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>6</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>FACB0BD0E0180B8CFDED27B7FE71D7E5C70EC80D</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>TX_ERP_ClaveTemporal.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="ExcelLibrary, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\ExcelLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CROrdenCompraxprov.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CROrdenCompraxprov.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FrmAprobacionOC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAprobacionOC.Designer.cs">
+      <DependentUpon>FrmAprobacionOC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCOreporteOCxProv_rpt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCOreporteOCxProv_rpt.Designer.cs">
+      <DependentUpon>FrmCOreporteOCxProv_rpt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmFamilia_mnt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmFamilia_mnt.Designer.cs">
+      <DependentUpon>FrmFamilia_mnt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmInconsistencia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmInconsistencia.Designer.cs">
+      <DependentUpon>FrmInconsistencia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLiberarOC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLiberarOC.Designer.cs">
+      <DependentUpon>FrmLiberarOC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmOrdenCompra_qry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmOrdenCompra_qry.Designer.cs">
+      <DependentUpon>FrmOrdenCompra_qry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmOrdenCompra_Rpt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmOrdenCompra_Rpt.Designer.cs">
+      <DependentUpon>FrmOrdenCompra_Rpt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmVistaPrevia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmVistaPrevia.Designer.cs">
+      <DependentUpon>FrmVistaPrevia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrdenCompraxprov.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OrdenCompraxprov.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Properties\ActiveDirectoryValidator.cs" />
+    <Compile Include="FrmFactura_mnt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmFactura_mnt.Designer.cs">
+      <DependentUpon>FrmFactura_mnt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAutorizacionOC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAutorizacionOC.Designer.cs">
+      <DependentUpon>FrmAutorizacionOC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frmcocondicionpago_qry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmcocondicionpago_qry.Designer.cs">
+      <DependentUpon>Frmcocondicionpago_qry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmcoproveedor_qry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmcoproveedor_qry.Designer.cs">
+      <DependentUpon>frmcoproveedor_qry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frmco_modaloc_qry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmco_modaloc_qry.Designer.cs">
+      <DependentUpon>Frmco_modaloc_qry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frmco_ordenCompra_mnt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmco_ordenCompra_mnt.Designer.cs">
+      <DependentUpon>Frmco_ordenCompra_mnt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frmco_tipogasto_qry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmco_tipogasto_qry.Designer.cs">
+      <DependentUpon>Frmco_tipogasto_qry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmExportacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmExportacion.Designer.cs">
+      <DependentUpon>FrmExportacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmExportacion_qry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmExportacion_qry.Designer.cs">
+      <DependentUpon>FrmExportacion_qry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmImportacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmImportacion.Designer.cs">
+      <DependentUpon>frmImportacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frmimportacion_qry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmimportacion_qry.Designer.cs">
+      <DependentUpon>Frmimportacion_qry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMDI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMDI.Designer.cs">
+      <DependentUpon>frmMDI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frmpersonal_qry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmpersonal_qry.Designer.cs">
+      <DependentUpon>Frmpersonal_qry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frmproducto_mnt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmproducto_mnt.Designer.cs">
+      <DependentUpon>Frmproducto_mnt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frmproducto_qry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmproducto_qry.Designer.cs">
+      <DependentUpon>Frmproducto_qry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmProveedor_mnt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmProveedor_mnt.Designer.cs">
+      <DependentUpon>FrmProveedor_mnt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTipoGasto_qry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTipoGasto_qry.Designer.cs">
+      <DependentUpon>FrmTipoGasto_qry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="wfChgEmpPer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="wfChgEmpPer.Designer.cs">
+      <DependentUpon>wfChgEmpPer.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="CROrdenCompraxprov.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CROrdenCompraxprov.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAprobacionOC.resx">
+      <DependentUpon>FrmAprobacionOC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCOreporteOCxProv_rpt.resx">
+      <DependentUpon>FrmCOreporteOCxProv_rpt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmFactura_mnt.resx">
+      <DependentUpon>FrmFactura_mnt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAutorizacionOC.resx">
+      <DependentUpon>FrmAutorizacionOC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmcocondicionpago_qry.resx">
+      <DependentUpon>Frmcocondicionpago_qry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmcoproveedor_qry.resx">
+      <DependentUpon>frmcoproveedor_qry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmco_modaloc_qry.resx">
+      <DependentUpon>Frmco_modaloc_qry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmco_ordenCompra_mnt.resx">
+      <DependentUpon>Frmco_ordenCompra_mnt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmco_tipogasto_qry.resx">
+      <DependentUpon>Frmco_tipogasto_qry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmExportacion.resx">
+      <DependentUpon>FrmExportacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmExportacion_qry.resx">
+      <DependentUpon>FrmExportacion_qry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmFamilia_mnt.resx">
+      <DependentUpon>FrmFamilia_mnt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmImportacion.resx">
+      <DependentUpon>frmImportacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmimportacion_qry.resx">
+      <DependentUpon>Frmimportacion_qry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmInconsistencia.resx">
+      <DependentUpon>FrmInconsistencia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLiberarOC.resx">
+      <DependentUpon>FrmLiberarOC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMDI.resx">
+      <DependentUpon>frmMDI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmOrdenCompra_qry.resx">
+      <DependentUpon>FrmOrdenCompra_qry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmOrdenCompra_Rpt.resx">
+      <DependentUpon>FrmOrdenCompra_Rpt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmpersonal_qry.resx">
+      <DependentUpon>Frmpersonal_qry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmproducto_mnt.resx">
+      <DependentUpon>Frmproducto_mnt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmproducto_qry.resx">
+      <DependentUpon>Frmproducto_qry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmProveedor_mnt.resx">
+      <DependentUpon>FrmProveedor_mnt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTipoGasto_qry.resx">
+      <DependentUpon>FrmTipoGasto_qry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmVistaPrevia.resx">
+      <DependentUpon>FrmVistaPrevia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrdenCompraxprov.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>OrdenCompraxprov.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="wfChgEmpPer.resx">
+      <DependentUpon>wfChgEmpPer.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="TX_ERP_ClaveTemporal.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Config\ConfigData.xml" />
+    <Content Include="Images\Controls\Attention.png" />
+    <Content Include="Images\Controls\calendar.gif" />
+    <Content Include="Images\Controls\calendarDisabled.gif" />
+    <Content Include="Images\Controls\fuFotografia.png" />
+    <Content Include="Images\Controls\green.png" />
+    <Content Include="Images\Controls\Headermsg.png" />
+    <Content Include="Images\Controls\hovertoolbar.png" />
+    <Content Include="Images\Controls\Loading.gif" />
+    <Content Include="Images\Controls\piemsg.png" />
+    <Content Include="Images\Controls\ProgBarGreen.png" />
+    <Content Include="Images\Controls\ProgBarRed.png" />
+    <Content Include="Images\Controls\SpliterArrowDown.png" />
+    <Content Include="Images\Controls\SpliterArrowUp.png" />
+    <Content Include="Images\Controls\SpliterBkgActive.png" />
+    <Content Include="Images\Controls\SpliterBkgInactive.png" />
+    <Content Include="Images\Controls\sprite.gif" />
+    <Content Include="Images\Controls\tab-line.png" />
+    <Content Include="Images\Controls\tab.png" />
+    <Content Include="Images\Icons\Disabled\add.png" />
+    <Content Include="Images\Icons\Disabled\Check.png" />
+    <Content Include="Images\Icons\Disabled\Copy.png" />
+    <Content Include="Images\Icons\Disabled\DbStart.png" />
+    <Content Include="Images\Icons\Disabled\Delete.png" />
+    <Content Include="Images\Icons\Disabled\DownArrow.png" />
+    <Content Include="Images\Icons\Disabled\Edit.png" />
+    <Content Include="Images\Icons\Disabled\EditFile.png" />
+    <Content Include="Images\Icons\Disabled\GenerateTable.png" />
+    <Content Include="Images\Icons\Disabled\ImportField.png" />
+    <Content Include="Images\Icons\Disabled\ImportTable.png" />
+    <Content Include="Images\Icons\Disabled\Preview.png" />
+    <Content Include="Images\Icons\Disabled\Sunat.png" />
+    <Content Include="Images\Icons\Disabled\UpArrow.png" />
+    <Content Include="Images\Icons\Enabled\add.png" />
+    <Content Include="Images\Icons\Enabled\AddFolder.png" />
+    <Content Include="Images\Icons\Enabled\ArrowDoc.png" />
+    <Content Include="Images\Icons\Enabled\BACK.png" />
+    <Content Include="Images\Icons\Enabled\Calculator.png" />
+    <Content Include="Images\Icons\Enabled\CalendarCheck.png" />
+    <Content Include="Images\Icons\Enabled\CalendarGroup.png" />
+    <Content Include="Images\Icons\Enabled\CalendarOne.png" />
+    <Content Include="Images\Icons\Enabled\Check.png" />
+    <Content Include="Images\Icons\Enabled\Clock.png" />
+    <Content Include="Images\Icons\Enabled\COMMENT_ERROR.png" />
+    <Content Include="Images\Icons\Enabled\Copy.png" />
+    <Content Include="Images\Icons\Enabled\DbImport.png" />
+    <Content Include="Images\Icons\Enabled\DbStart.png" />
+    <Content Include="Images\Icons\Enabled\Delete.png" />
+    <Content Include="Images\Icons\Enabled\DowloadFile.png" />
+    <Content Include="Images\Icons\Enabled\Edit.png" />
+    <Content Include="Images\Icons\Enabled\EditFile.png" />
+    <Content Include="Images\Icons\Enabled\EditOption.png" />
+    <Content Include="Images\Icons\Enabled\Excel.png" />
+    <Content Include="Images\Icons\Enabled\Exit.ico" />
+    <Content Include="Images\Icons\Enabled\ExportXLS.png" />
+    <Content Include="Images\Icons\Enabled\FAQ16.png" />
+    <Content Include="Images\Icons\Enabled\FolderClose.png" />
+    <Content Include="Images\Icons\Enabled\function.png" />
+    <Content Include="Images\Icons\Enabled\GenerateTable.png" />
+    <Content Include="Images\Icons\Enabled\HISTAPRO.png" />
+    <Content Include="Images\Icons\Enabled\ImportField.png" />
+    <Content Include="Images\Icons\Enabled\ImportTable.png" />
+    <Content Include="Images\Icons\Enabled\INFO.png" />
+    <Content Include="Images\Icons\Enabled\Left24.png" />
+    <Content Include="Images\Icons\Enabled\Money.png" />
+    <Content Include="Images\Icons\Enabled\New.png" />
+    <Content Include="Images\Icons\Enabled\Preview.png" />
+    <Content Include="Images\Icons\Enabled\Printer.png" />
+    <Content Include="Images\Icons\Enabled\Right24.png" />
+    <Content Include="Images\Icons\Enabled\SAVE.png" />
+    <Content Include="Images\Icons\Enabled\SAVENEW.png" />
+    <Content Include="Images\Icons\Enabled\SAVEOBS.png" />
+    <Content Include="Images\Icons\Enabled\SAVEOK.png" />
+    <Content Include="Images\Icons\Enabled\Sunat.png" />
+    <Content Include="Images\Icons\Enabled\User.png" />
+    <None Include="Images\Imagenes\Icons\1\import.ico" />
+    <None Include="Images\Imagenes\Icons\1\export.ico" />
+    <None Include="Images\Imagenes\Icons\2\Fwdw_icons\grey\ico\001_57.ico" />
+    <None Include="Images\Imagenes\Icons\1\sharp\ico\shoppingcart.ico" />
+    <None Include="Images\Imagenes\Icons\1\sharp\ico\male.ico" />
+    <None Include="Images\Imagenes\Icons\3\iCandy Junior Toolbar Icons win\The Icons\Advanced Options.ico" />
+    <None Include="Images\Imagenes\Icons\2\Fwdw_icons\grey\ico\001_18.ico" />
+    <None Include="Images\Imagenes\Icons\4\Pencil3.ico" />
+    <None Include="Images\Imagenes\Icons\3\iCandy Junior Toolbar Icons win\The Icons\New Doc.ico" />
+    <None Include="Images\Imagenes\Icons\1\application.ico" />
+    <Content Include="Images\Logos\HeaderBkg.png" />
+    <Content Include="Images\Logos\Headermsg.png" />
+    <Content Include="Images\Logos\LoginBkg.jpg" />
+    <Content Include="Images\Logos\Logo.png" />
+    <Content Include="Images\Logos\LogoBkg.jpg" />
+    <Content Include="Images\Logos\n.jpg" />
+    <Content Include="Images\Logos\piemsg.png" />
+    <Content Include="Images\Logos\Version.png" />
+    <None Include="Resources\001_52.ico" />
+    <None Include="Resources\001_51.ico" />
+    <None Include="Resources\icono_formacion_calidad.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Texfina.BOMnt.Co.v2.0\Texfina.BOMnt.Co.v2.0.csproj">
+      <Project>{a8467197-0d9e-4db3-8618-e93c49e00a32}</Project>
+      <Name>Texfina.BOMnt.Co.v2.0</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Texfina.BOMnt.Mg.v2.0\Texfina.BOMnt.Mg.v2.0.csproj">
+      <Project>{ce5b9342-0a2f-4cc0-aa19-a3d9f4aef334}</Project>
+      <Name>Texfina.BOMnt.Mg.v2.0</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Texfina.BOMnt.Sy.v2.0\Texfina.BOMnt.Sy.v2.0.csproj">
+      <Project>{b6ce3eae-3510-4edf-83ef-01ebbebfc941}</Project>
+      <Name>Texfina.BOMnt.Sy.v2.0</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Texfina.BOQry.Co.v2.0\Texfina.BOQry.Co.v2.0.csproj">
+      <Project>{ad28ca23-5345-49e4-aa02-4951147ca351}</Project>
+      <Name>Texfina.BOQry.Co.v2.0</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Texfina.BOQry.Mg.v2.0\Texfina.BOQry.Mg.v2.0.csproj">
+      <Project>{4305a0bb-6d15-4fb2-b652-06709fc44d8d}</Project>
+      <Name>Texfina.BOQry.Mg.v2.0</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Texfina.BOQry.Sy.v2.0\Texfina.BOQry.Sy.v2.0.csproj">
+      <Project>{f2a51a7e-c791-4822-9ee2-a593aa711462}</Project>
+      <Name>Texfina.BOQry.Sy.v2.0</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Texfina.Core.Common.v2.0\Texfina.Core.Common.v2.0.csproj">
+      <Project>{cb42fa9b-a4a2-44ce-bcd3-833cefdad36c}</Project>
+      <Name>Texfina.Core.Common.v2.0</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Texfina.Core.Data.v2.0\Texfina.Core.Data.v2.0.csproj">
+      <Project>{bcb3134e-69e4-4604-99d6-e9f564f328b0}</Project>
+      <Name>Texfina.Core.Data.v2.0</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Texfina.Core.Web.v2.0\Texfina.Core.Web.v2.0.csproj">
+      <Project>{ad24fdee-2ae8-47a0-b08e-5244b4bae03c}</Project>
+      <Name>Texfina.Core.Web.v2.0</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Texfina.Entity.Co.v2.0\Texfina.Entity.Co.v2.0.csproj">
+      <Project>{56af994c-0a8c-4123-9489-1f0b4d7672a1}</Project>
+      <Name>Texfina.Entity.Co.v2.0</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Texfina.Entity.Mg.v2.0\Texfina.Entity.Mg.v2.0.csproj">
+      <Project>{4bc00f99-b753-41fa-bf26-494682e3bbca}</Project>
+      <Name>Texfina.Entity.Mg.v2.0</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Texfina.Entity.Mt.v2.0\Texfina.Entity.Mt.v2.0.csproj">
+      <Project>{0e9e8908-de7d-4f4e-81cf-0a50479c07d2}</Project>
+      <Name>Texfina.Entity.Mt.v2.0</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Texfina.Entity.Sy.v2.0\Texfina.Entity.Sy.v2.0.csproj">
+      <Project>{e7cd0ddd-9c24-4319-9234-9a27a0e2fe67}</Project>
+      <Name>Texfina.Entity.Sy.v2.0</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 y x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 y x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client,KB2468871">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 y x64%29 y actualización para .NET Framework 4 %28KB2468871%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="SAP.CrystalReports14.NET.2.0">
+      <Visible>False</Visible>
+      <ProductName>SAP Crystal Reports Runtime Engine for .NET Framework</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AcroPDFLib">
+      <Guid>{05BFD3F1-6319-4F30-B752-C7A22889BCC4}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="ACTIVEXLib">
+      <Guid>{EA3E6E3C-5130-49C1-8EDE-F889CD0F4429}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="AxAcroPDFLib">
+      <Guid>{05BFD3F1-6319-4F30-B752-C7A22889BCC4}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

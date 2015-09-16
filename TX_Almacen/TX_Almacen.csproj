@@ -1,0 +1,799 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6700F34E-7ADE-4908-ACFF-4E9CEF55B83C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TX_Almacen</RootNamespace>
+    <AssemblyName>TX_Almacen</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkProfile />
+    <PublishUrl>publicar\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>297A88C6F510F7DB5DCD55FD8B4FD4BF6BA086AE</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>TX_Almacen_ClaveTemporal.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\Resources\Microsoft.Office.Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AL_Salida_Detalle_rpt01.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AL_Salida_Detalle_rpt01.Designer.cs">
+      <DependentUpon>AL_Salida_Detalle_rpt01.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAnticiposQry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAnticiposQry.Designer.cs">
+      <DependentUpon>frmAnticiposQry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmProductos_StockTF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmProductos_StockTF.Designer.cs">
+      <DependentUpon>FrmProductos_StockTF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CRIngreso_etiqueta.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CRIngreso_etiqueta.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CROrdenPedido_rpt01.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CROrdenPedido_rpt01.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CRSalida_despacho_rpt01.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CRSalida_despacho_rpt01.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CR_Cliente_rpt01.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CR_Cliente_rpt01.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CR_Ingreso_rpt01.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CR_Ingreso_rpt01.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="frmAprobacionMnt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAprobacionMnt.Designer.cs">
+      <DependentUpon>frmAprobacionMnt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAutorizacion2OP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAutorizacion2OP.Designer.cs">
+      <DependentUpon>FrmAutorizacion2OP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAutorizacionOP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAutorizacionOP.Designer.cs">
+      <DependentUpon>FrmAutorizacionOP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCliente_qry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCliente_qry.Designer.cs">
+      <DependentUpon>frmCliente_qry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frmcocondicionpago_qry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmcocondicionpago_qry.Designer.cs">
+      <DependentUpon>Frmcocondicionpago_qry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmColor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmColor.Designer.cs">
+      <DependentUpon>frmColor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmIngreso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmIngreso.Designer.cs">
+      <DependentUpon>frmIngreso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmIngresoUpdate_kg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmIngresoUpdate_kg.Designer.cs">
+      <DependentUpon>FrmIngresoUpdate_kg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmIngreso_Detalle_rpt01.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmIngreso_Detalle_rpt01.Designer.cs">
+      <DependentUpon>FrmIngreso_Detalle_rpt01.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmIngreso_qry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmIngreso_qry.Designer.cs">
+      <DependentUpon>FrmIngreso_qry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLiberarOP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLiberarOP.Designer.cs">
+      <DependentUpon>FrmLiberarOP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmListadoPrecio_qry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmListadoPrecio_qry.Designer.cs">
+      <DependentUpon>FrmListadoPrecio_qry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMdi_AL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMdi_AL.Designer.cs">
+      <DependentUpon>FrmMdi_AL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmopProductoPopup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmopProductoPopup.Designer.cs">
+      <DependentUpon>frmopProductoPopup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmOrdenPedido_mnt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmOrdenPedido_mnt.Designer.cs">
+      <DependentUpon>FrmOrdenPedido_mnt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmOrdenPedido_qry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmOrdenPedido_qry.Designer.cs">
+      <DependentUpon>FrmOrdenPedido_qry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmOrdenPedido_qry02.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmOrdenPedido_qry02.Designer.cs">
+      <DependentUpon>FrmOrdenPedido_qry02.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmOrdenPedido_rpt01.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmOrdenPedido_rpt01.Designer.cs">
+      <DependentUpon>FrmOrdenPedido_rpt01.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPersonal_qry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPersonal_qry.Designer.cs">
+      <DependentUpon>frmPersonal_qry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmProductoDetallePopup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmProductoDetallePopup.Designer.cs">
+      <DependentUpon>FrmProductoDetallePopup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmProductoPopup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProductoPopup.Designer.cs">
+      <DependentUpon>frmProductoPopup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmProductos_Stock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmProductos_Stock.Designer.cs">
+      <DependentUpon>FrmProductos_Stock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmProductos_TFxStock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmProductos_TFxStock.Designer.cs">
+      <DependentUpon>FrmProductos_TFxStock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmProducto_qry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProducto_qry.Designer.cs">
+      <DependentUpon>frmProducto_qry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmProducto_stock_qry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmProducto_stock_qry.Designer.cs">
+      <DependentUpon>FrmProducto_stock_qry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSalida.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSalida.Designer.cs">
+      <DependentUpon>FrmSalida.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSalidaProducto_ModifPopup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSalidaProducto_ModifPopup.Designer.cs">
+      <DependentUpon>FrmSalidaProducto_ModifPopup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSalidaProducto_Popup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSalidaProducto_Popup.Designer.cs">
+      <DependentUpon>FrmSalidaProducto_Popup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSalida_Detalle_popup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSalida_Detalle_popup.Designer.cs">
+      <DependentUpon>FrmSalida_Detalle_popup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSalida_qry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSalida_qry.Designer.cs">
+      <DependentUpon>FrmSalida_qry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSalida_rpt01.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSalida_rpt01.Designer.cs">
+      <DependentUpon>FrmSalida_rpt01.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTejido_mnt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTejido_mnt.Designer.cs">
+      <DependentUpon>FrmTejido_mnt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTejido_qry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTejido_qry.Designer.cs">
+      <DependentUpon>FrmTejido_qry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTipoGasto_qry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTipoGasto_qry.Designer.cs">
+      <DependentUpon>FrmTipoGasto_qry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmVendedor_qry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmVendedor_qry.Designer.cs">
+      <DependentUpon>FrmVendedor_qry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmVistaPreviaIngresoEtiqueta_rpt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmVistaPreviaIngresoEtiqueta_rpt.Designer.cs">
+      <DependentUpon>FrmVistaPreviaIngresoEtiqueta_rpt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCliente.Designer.cs">
+      <DependentUpon>frmCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frnColor_qry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frnColor_qry.Designer.cs">
+      <DependentUpon>frnColor_qry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCliente_rpt01.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCliente_rpt01.Designer.cs">
+      <DependentUpon>FrmCliente_rpt01.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="wfChgEmpPer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="wfChgEmpPer.Designer.cs">
+      <DependentUpon>wfChgEmpPer.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AL_Salida_Detalle_rpt01.resx">
+      <DependentUpon>AL_Salida_Detalle_rpt01.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAnticiposQry.resx">
+      <DependentUpon>frmAnticiposQry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmProductos_StockTF.resx">
+      <DependentUpon>FrmProductos_StockTF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRIngreso_etiqueta.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CRIngreso_etiqueta.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CROrdenPedido_rpt01.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CROrdenPedido_rpt01.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRSalida_despacho_rpt01.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CRSalida_despacho_rpt01.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CR_Cliente_rpt01.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CR_Cliente_rpt01.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CR_Ingreso_rpt01.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CR_Ingreso_rpt01.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAprobacionMnt.resx">
+      <DependentUpon>frmAprobacionMnt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAutorizacion2OP.resx">
+      <DependentUpon>FrmAutorizacion2OP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAutorizacionOP.resx">
+      <DependentUpon>FrmAutorizacionOP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCliente_qry.resx">
+      <DependentUpon>frmCliente_qry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmcocondicionpago_qry.resx">
+      <DependentUpon>Frmcocondicionpago_qry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmColor.resx">
+      <DependentUpon>frmColor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmIngreso.resx">
+      <DependentUpon>frmIngreso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmIngresoUpdate_kg.resx">
+      <DependentUpon>FrmIngresoUpdate_kg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmIngreso_Detalle_rpt01.resx">
+      <DependentUpon>FrmIngreso_Detalle_rpt01.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmIngreso_qry.resx">
+      <DependentUpon>FrmIngreso_qry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLiberarOP.resx">
+      <DependentUpon>FrmLiberarOP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmListadoPrecio_qry.resx">
+      <DependentUpon>FrmListadoPrecio_qry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMdi_AL.resx">
+      <DependentUpon>FrmMdi_AL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmopProductoPopup.resx">
+      <DependentUpon>frmopProductoPopup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmOrdenPedido_mnt.resx">
+      <DependentUpon>FrmOrdenPedido_mnt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmOrdenPedido_qry.resx">
+      <DependentUpon>FrmOrdenPedido_qry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmOrdenPedido_qry02.resx">
+      <DependentUpon>FrmOrdenPedido_qry02.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmOrdenPedido_rpt01.resx">
+      <DependentUpon>FrmOrdenPedido_rpt01.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPersonal_qry.resx">
+      <DependentUpon>frmPersonal_qry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmProductoDetallePopup.resx">
+      <DependentUpon>FrmProductoDetallePopup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProductoPopup.resx">
+      <DependentUpon>frmProductoPopup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmProductos_Stock.resx">
+      <DependentUpon>FrmProductos_Stock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmProductos_TFxStock.resx">
+      <DependentUpon>FrmProductos_TFxStock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProducto_qry.resx">
+      <DependentUpon>frmProducto_qry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmProducto_stock_qry.resx">
+      <DependentUpon>FrmProducto_stock_qry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSalida.resx">
+      <DependentUpon>FrmSalida.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSalidaProducto_ModifPopup.resx">
+      <DependentUpon>FrmSalidaProducto_ModifPopup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSalidaProducto_Popup.resx">
+      <DependentUpon>FrmSalidaProducto_Popup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSalida_Detalle_popup.resx">
+      <DependentUpon>FrmSalida_Detalle_popup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSalida_qry.resx">
+      <DependentUpon>FrmSalida_qry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSalida_rpt01.resx">
+      <DependentUpon>FrmSalida_rpt01.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTejido_mnt.resx">
+      <DependentUpon>FrmTejido_mnt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTejido_qry.resx">
+      <DependentUpon>FrmTejido_qry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTipoGasto_qry.resx">
+      <DependentUpon>FrmTipoGasto_qry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmVendedor_qry.resx">
+      <DependentUpon>FrmVendedor_qry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmVistaPreviaIngresoEtiqueta_rpt.resx">
+      <DependentUpon>FrmVistaPreviaIngresoEtiqueta_rpt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCliente.resx">
+      <DependentUpon>frmCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frnColor_qry.resx">
+      <DependentUpon>frnColor_qry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCliente_rpt01.resx">
+      <DependentUpon>FrmCliente_rpt01.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="wfChgEmpPer.resx">
+      <DependentUpon>wfChgEmpPer.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="TX_Almacen_ClaveTemporal.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\Controls\Attention.png" />
+    <Content Include="Images\Controls\calendar.gif" />
+    <Content Include="Images\Controls\calendarDisabled.gif" />
+    <Content Include="Images\Controls\fuFotografia.png" />
+    <Content Include="Images\Controls\green.png" />
+    <Content Include="Images\Controls\Headermsg.png" />
+    <Content Include="Images\Controls\hovertoolbar.png" />
+    <Content Include="Images\Controls\Loading.gif" />
+    <Content Include="Images\Controls\piemsg.png" />
+    <Content Include="Images\Controls\ProgBarGreen.png" />
+    <Content Include="Images\Controls\ProgBarRed.png" />
+    <Content Include="Images\Controls\SpliterArrowDown.png" />
+    <Content Include="Images\Controls\SpliterArrowUp.png" />
+    <Content Include="Images\Controls\SpliterBkgActive.png" />
+    <Content Include="Images\Controls\SpliterBkgInactive.png" />
+    <Content Include="Images\Controls\sprite.gif" />
+    <Content Include="Images\Controls\tab-line.png" />
+    <Content Include="Images\Controls\tab.png" />
+    <Content Include="Images\Icons\Disabled\add.png" />
+    <Content Include="Images\Icons\Disabled\Check.png" />
+    <Content Include="Images\Icons\Disabled\Copy.png" />
+    <Content Include="Images\Icons\Disabled\DbStart.png" />
+    <Content Include="Images\Icons\Disabled\Delete.png" />
+    <Content Include="Images\Icons\Disabled\DownArrow.png" />
+    <Content Include="Images\Icons\Disabled\Edit.png" />
+    <Content Include="Images\Icons\Disabled\EditFile.png" />
+    <Content Include="Images\Icons\Disabled\GenerateTable.png" />
+    <Content Include="Images\Icons\Disabled\ImportField.png" />
+    <Content Include="Images\Icons\Disabled\ImportTable.png" />
+    <Content Include="Images\Icons\Disabled\Preview.png" />
+    <Content Include="Images\Icons\Disabled\Sunat.png" />
+    <Content Include="Images\Icons\Disabled\UpArrow.png" />
+    <Content Include="Images\Icons\Enabled\add.png" />
+    <Content Include="Images\Icons\Enabled\AddFolder.png" />
+    <Content Include="Images\Icons\Enabled\ArrowDoc.png" />
+    <Content Include="Images\Icons\Enabled\BACK.png" />
+    <Content Include="Images\Icons\Enabled\Calculator.png" />
+    <Content Include="Images\Icons\Enabled\CalendarCheck.png" />
+    <Content Include="Images\Icons\Enabled\CalendarGroup.png" />
+    <Content Include="Images\Icons\Enabled\CalendarOne.png" />
+    <Content Include="Images\Icons\Enabled\Check.png" />
+    <Content Include="Images\Icons\Enabled\Clock.png" />
+    <Content Include="Images\Icons\Enabled\COMMENT_ERROR.png" />
+    <Content Include="Images\Icons\Enabled\Copy.png" />
+    <Content Include="Images\Icons\Enabled\DbImport.png" />
+    <Content Include="Images\Icons\Enabled\DbStart.png" />
+    <Content Include="Images\Icons\Enabled\Delete.png" />
+    <Content Include="Images\Icons\Enabled\DowloadFile.png" />
+    <Content Include="Images\Icons\Enabled\Edit.png" />
+    <Content Include="Images\Icons\Enabled\EditFile.png" />
+    <Content Include="Images\Icons\Enabled\EditOption.png" />
+    <Content Include="Images\Icons\Enabled\Excel.png" />
+    <Content Include="Images\Icons\Enabled\Exit.ico" />
+    <Content Include="Images\Icons\Enabled\ExportXLS.png" />
+    <Content Include="Images\Icons\Enabled\FAQ16.png" />
+    <Content Include="Images\Icons\Enabled\FolderClose.png" />
+    <Content Include="Images\Icons\Enabled\function.png" />
+    <Content Include="Images\Icons\Enabled\GenerateTable.png" />
+    <Content Include="Images\Icons\Enabled\HISTAPRO.png" />
+    <Content Include="Images\Icons\Enabled\ImportField.png" />
+    <Content Include="Images\Icons\Enabled\ImportTable.png" />
+    <Content Include="Images\Icons\Enabled\INFO.png" />
+    <Content Include="Images\Icons\Enabled\Left24.png" />
+    <Content Include="Images\Icons\Enabled\Money.png" />
+    <Content Include="Images\Icons\Enabled\New.png" />
+    <Content Include="Images\Icons\Enabled\Preview.png" />
+    <Content Include="Images\Icons\Enabled\Printer.png" />
+    <Content Include="Images\Icons\Enabled\Right24.png" />
+    <Content Include="Images\Icons\Enabled\SAVE.png" />
+    <Content Include="Images\Icons\Enabled\SAVENEW.png" />
+    <Content Include="Images\Icons\Enabled\SAVEOBS.png" />
+    <Content Include="Images\Icons\Enabled\SAVEOK.png" />
+    <Content Include="Images\Icons\Enabled\Sunat.png" />
+    <Content Include="Images\Icons\Enabled\User.png" />
+    <None Include="Images\Icons\Exit.ico" />
+    <None Include="Images\Icons\ico\exit.ico" />
+    <Content Include="Images\Logos\HeaderBkg.png" />
+    <Content Include="Images\Logos\Headermsg.png" />
+    <Content Include="Images\Logos\LoginBkg.jpg" />
+    <Content Include="Images\Logos\Logo.png" />
+    <Content Include="Images\Logos\LogoBkg.jpg" />
+    <Content Include="Images\Logos\n.jpg" />
+    <Content Include="Images\Logos\piemsg.png" />
+    <Content Include="Images\Logos\Version.png" />
+    <None Include="Images\Imagenes\Icons\4\Pencil3.ico" />
+    <None Include="Images\Imagenes\Icons\3\iCandy Junior Toolbar Icons win\The Icons\New Doc.ico" />
+    <None Include="Images\Imagenes\Icons\3\iCandy Junior Toolbar Icons win\The Icons\Advanced Options.ico" />
+    <None Include="Images\Imagenes\Icons\2\Fwdw_icons\grey\ico\001_57.ico" />
+    <None Include="Images\Imagenes\Icons\2\Fwdw_icons\grey\ico\001_18.ico" />
+    <None Include="Images\Imagenes\Icons\1\sharp\ico\shoppingcart.ico" />
+    <None Include="Images\Imagenes\Icons\1\sharp\ico\male.ico" />
+    <None Include="Images\Imagenes\Icons\1\import.ico" />
+    <None Include="Images\Imagenes\Icons\1\export.ico" />
+    <None Include="Images\Imagenes\Icons\1\application.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Texfina.BOMnt.Al.v2.0\Texfina.BOMnt.Al.v2.0.csproj">
+      <Project>{4d8e3a58-39c5-4d03-8c6d-daf1d59fb09d}</Project>
+      <Name>Texfina.BOMnt.Al.v2.0</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Texfina.BOQry.Co.v2.0\Texfina.BOQry.Co.v2.0.csproj">
+      <Project>{ad28ca23-5345-49e4-aa02-4951147ca351}</Project>
+      <Name>Texfina.BOQry.Co.v2.0</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Texfina.BOQry.Sy.v2.0\Texfina.BOQry.Sy.v2.0.csproj">
+      <Project>{f2a51a7e-c791-4822-9ee2-a593aa711462}</Project>
+      <Name>Texfina.BOQry.Sy.v2.0</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Texfina.BOQry.TJ.V2.0\Texfina.BOQry.TJ.v2.0.csproj">
+      <Project>{7bdfa3fa-d55c-4e53-a3c0-f0183b9e1dea}</Project>
+      <Name>Texfina.BOQry.TJ.v2.0</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Texfina.BOQry.Ve.v2.0\Texfina.BOQry.Ve.v2.0.csproj">
+      <Project>{46973e5b-d00b-4ee2-bf5e-1443796e32e7}</Project>
+      <Name>Texfina.BOQry.Ve.v2.0</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Texfina.Core.Common.v2.0\Texfina.Core.Common.v2.0.csproj">
+      <Project>{cb42fa9b-a4a2-44ce-bcd3-833cefdad36c}</Project>
+      <Name>Texfina.Core.Common.v2.0</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Texfina.Core.Data.v2.0\Texfina.Core.Data.v2.0.csproj">
+      <Project>{bcb3134e-69e4-4604-99d6-e9f564f328b0}</Project>
+      <Name>Texfina.Core.Data.v2.0</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Texfina.Core.Web.v2.0\Texfina.Core.Web.v2.0.csproj">
+      <Project>{ad24fdee-2ae8-47a0-b08e-5244b4bae03c}</Project>
+      <Name>Texfina.Core.Web.v2.0</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Texfina.DOQry.Sy.v2.0\Texfina.DOQry.Sy.v2.0.csproj">
+      <Project>{0ff4b8ea-0e75-41e1-8b1c-ec5ccf55fbb9}</Project>
+      <Name>Texfina.DOQry.Sy.v2.0</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Texfina.Entity.Al.v2.0\Texfina.Entity.Al.v2.0.csproj">
+      <Project>{eb53b76e-c160-46e5-96a4-9125b9c75917}</Project>
+      <Name>Texfina.Entity.Al.v2.0</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Texfina.Entity.Co.v2.0\Texfina.Entity.Co.v2.0.csproj">
+      <Project>{56af994c-0a8c-4123-9489-1f0b4d7672a1}</Project>
+      <Name>Texfina.Entity.Co.v2.0</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Texfina.Entity.Sy.v2.0\Texfina.Entity.Sy.v2.0.csproj">
+      <Project>{e7cd0ddd-9c24-4319-9234-9a27a0e2fe67}</Project>
+      <Name>Texfina.Entity.Sy.v2.0</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Texfina.Entity.TJ.V2.0\Texfina.Entity.TJ.V2.0.csproj">
+      <Project>{0eb425e8-d36c-47b5-aa01-3b225055091a}</Project>
+      <Name>Texfina.Entity.TJ.V2.0</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Texfina.Entity.Ve.v2.0\Texfina.Entity.Ve.v2.0.csproj">
+      <Project>{22156452-b251-49e9-8ba1-3c11042ea8d3}</Project>
+      <Name>Texfina.Entity.Ve.v2.0</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 y x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,KB2468871">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 y x64%29 y actualización para .NET Framework 4 %28KB2468871%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 y x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client,KB2468871">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 y x64%29 y actualización para .NET Framework 4 %28KB2468871%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 y x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.ReportViewer.11.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft Report Viewer 2012 Runtime</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.SqlServer.SQLSysClrTypes.11.0.x64">
+      <Visible>False</Visible>
+      <ProductName>Microsoft® System CLR Types for SQL Server® 2012 %28x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.SqlServer.SQLSysClrTypes.11.0.x86">
+      <Visible>False</Visible>
+      <ProductName>Microsoft® System CLR Types for SQL Server® 2012 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.VisualBasic.PowerPacks.10.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft Visual Basic PowerPacks 10.0</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="SAP.CrystalReports14.NET.2.0">
+      <Visible>False</Visible>
+      <ProductName>SAP Crystal Reports Runtime Engine for .NET Framework</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>7</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

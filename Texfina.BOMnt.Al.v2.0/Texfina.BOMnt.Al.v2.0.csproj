@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4D8E3A58-39C5-4D03-8C6D-DAF1D59FB09D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Texfina.BOMnt.Al.v2._0</RootNamespace>
+    <AssemblyName>Texfina.BOMnt.Al.v2.0</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BAlmacen.cs" />
+    <Compile Include="BCliente.cs" />
+    <Compile Include="BIngreso.cs" />
+    <Compile Include="BIngreso_Detalle.cs" />
+    <Compile Include="BlistPrecio_Detalle.cs" />
+    <Compile Include="BOrdPedido.cs" />
+    <Compile Include="BOrdPedido_Detalle.cs" />
+    <Compile Include="BSalida.cs" />
+    <Compile Include="BSalida_Detalle.cs" />
+    <Compile Include="BVendedor.cs" />
+    <Compile Include="Class1.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Texfina.DOMnt.Al.v2.0\Texfina.DOMnt.Al.v2.0.csproj">
+      <Project>{97ad119f-042e-4e76-b032-b215b285590a}</Project>
+      <Name>Texfina.DOMnt.Al.v2.0</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Texfina.Entity.Al.v2.0\Texfina.Entity.Al.v2.0.csproj">
+      <Project>{eb53b76e-c160-46e5-96a4-9125b9c75917}</Project>
+      <Name>Texfina.Entity.Al.v2.0</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Texfina.Entity.Co.v2.0\Texfina.Entity.Co.v2.0.csproj">
+      <Project>{56af994c-0a8c-4123-9489-1f0b4d7672a1}</Project>
+      <Name>Texfina.Entity.Co.v2.0</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

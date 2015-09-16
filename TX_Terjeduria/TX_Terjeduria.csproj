@@ -1,0 +1,413 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E25804B7-1D4C-44FF-9C0B-8D546F24FA14}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Sist_Compras</RootNamespace>
+    <AssemblyName>TX_Terjeduria</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Barcode4NET, Version=2.0.2000.0, Culture=neutral, PublicKeyToken=fdeffed0f6085085, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Barcode4NET.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CRfichatela_rpt.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CRfichatela_rpt.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CRTejTicket_rpt.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CRTejTicket_rpt.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="frmcoproveedor_qry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmcoproveedor_qry.Designer.cs">
+      <DependentUpon>frmcoproveedor_qry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMdi_TJ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMdi_TJ.Designer.cs">
+      <DependentUpon>FrmMdi_TJ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMuestrasEtiqueta_mnt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMuestrasEtiqueta_mnt.Designer.cs">
+      <DependentUpon>FrmMuestrasEtiqueta_mnt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMuestrasEtiqueta_qry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMuestrasEtiqueta_qry.Designer.cs">
+      <DependentUpon>FrmMuestrasEtiqueta_qry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTejeduriaRutaProces.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTejeduriaRutaProces.Designer.cs">
+      <DependentUpon>FrmTejeduriaRutaProces.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTejeduria_mnt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTejeduria_mnt.Designer.cs">
+      <DependentUpon>FrmTejeduria_mnt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmColor_qry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmColor_qry.Designer.cs">
+      <DependentUpon>FrmColor_qry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmModalDetalle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmModalDetalle.Designer.cs">
+      <DependentUpon>frmModalDetalle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTejeduria_rpt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTejeduria_rpt.Designer.cs">
+      <DependentUpon>FrmTejeduria_rpt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTejido_qry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTejido_qry.Designer.cs">
+      <DependentUpon>FrmTejido_qry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTejido_mnt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTejido_mnt.Designer.cs">
+      <DependentUpon>FrmTejido_mnt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrnMuestrasEtiqueta_rpt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrnMuestrasEtiqueta_rpt.Designer.cs">
+      <DependentUpon>FrnMuestrasEtiqueta_rpt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrnMuestrasEtiqueta_rpt02.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrnMuestrasEtiqueta_rpt02.Designer.cs">
+      <DependentUpon>FrnMuestrasEtiqueta_rpt02.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrnTejeduria_qry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrnTejeduria_qry.Designer.cs">
+      <DependentUpon>FrnTejeduria_qry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="wfChgEmpPer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="wfChgEmpPer.Designer.cs">
+      <DependentUpon>wfChgEmpPer.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="CRfichatela_rpt.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CRfichatela_rpt.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRTejTicket_rpt.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CRTejTicket_rpt.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmcoproveedor_qry.resx">
+      <DependentUpon>frmcoproveedor_qry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMdi_TJ.resx">
+      <DependentUpon>FrmMdi_TJ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMuestrasEtiqueta_mnt.resx">
+      <DependentUpon>FrmMuestrasEtiqueta_mnt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMuestrasEtiqueta_qry.resx">
+      <DependentUpon>FrmMuestrasEtiqueta_qry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTejeduriaRutaProces.resx">
+      <DependentUpon>FrmTejeduriaRutaProces.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTejeduria_mnt.resx">
+      <DependentUpon>FrmTejeduria_mnt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmColor_qry.resx">
+      <DependentUpon>FrmColor_qry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmModalDetalle.resx">
+      <DependentUpon>frmModalDetalle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTejeduria_rpt.resx">
+      <DependentUpon>FrmTejeduria_rpt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTejido_qry.resx">
+      <DependentUpon>FrmTejido_qry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTejido_mnt.resx">
+      <DependentUpon>FrmTejido_mnt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrnMuestrasEtiqueta_rpt.resx">
+      <DependentUpon>FrnMuestrasEtiqueta_rpt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrnMuestrasEtiqueta_rpt02.resx">
+      <DependentUpon>FrnMuestrasEtiqueta_rpt02.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrnTejeduria_qry.resx">
+      <DependentUpon>FrnTejeduria_qry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="wfChgEmpPer.resx">
+      <DependentUpon>wfChgEmpPer.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\Controls\Attention.png" />
+    <Content Include="Images\Controls\calendar.gif" />
+    <Content Include="Images\Controls\calendarDisabled.gif" />
+    <Content Include="Images\Controls\fuFotografia.png" />
+    <Content Include="Images\Controls\green.png" />
+    <Content Include="Images\Controls\Headermsg.png" />
+    <Content Include="Images\Controls\hovertoolbar.png" />
+    <Content Include="Images\Controls\Loading.gif" />
+    <Content Include="Images\Controls\piemsg.png" />
+    <Content Include="Images\Controls\ProgBarGreen.png" />
+    <Content Include="Images\Controls\ProgBarRed.png" />
+    <Content Include="Images\Controls\SpliterArrowDown.png" />
+    <Content Include="Images\Controls\SpliterArrowUp.png" />
+    <Content Include="Images\Controls\SpliterBkgActive.png" />
+    <Content Include="Images\Controls\SpliterBkgInactive.png" />
+    <Content Include="Images\Controls\sprite.gif" />
+    <Content Include="Images\Controls\tab-line.png" />
+    <Content Include="Images\Controls\tab.png" />
+    <Content Include="Images\Icons\Disabled\add.png" />
+    <Content Include="Images\Icons\Disabled\Check.png" />
+    <Content Include="Images\Icons\Disabled\Copy.png" />
+    <Content Include="Images\Icons\Disabled\DbStart.png" />
+    <Content Include="Images\Icons\Disabled\Delete.png" />
+    <Content Include="Images\Icons\Disabled\DownArrow.png" />
+    <Content Include="Images\Icons\Disabled\Edit.png" />
+    <Content Include="Images\Icons\Disabled\EditFile.png" />
+    <Content Include="Images\Icons\Disabled\GenerateTable.png" />
+    <Content Include="Images\Icons\Disabled\ImportField.png" />
+    <Content Include="Images\Icons\Disabled\ImportTable.png" />
+    <Content Include="Images\Icons\Disabled\Preview.png" />
+    <Content Include="Images\Icons\Disabled\Sunat.png" />
+    <Content Include="Images\Icons\Disabled\UpArrow.png" />
+    <Content Include="Images\Icons\Enabled\add.png" />
+    <Content Include="Images\Icons\Enabled\AddFolder.png" />
+    <Content Include="Images\Icons\Enabled\ArrowDoc.png" />
+    <Content Include="Images\Icons\Enabled\BACK.png" />
+    <Content Include="Images\Icons\Enabled\Calculator.png" />
+    <Content Include="Images\Icons\Enabled\CalendarCheck.png" />
+    <Content Include="Images\Icons\Enabled\CalendarGroup.png" />
+    <Content Include="Images\Icons\Enabled\CalendarOne.png" />
+    <Content Include="Images\Icons\Enabled\Check.png" />
+    <Content Include="Images\Icons\Enabled\Clock.png" />
+    <Content Include="Images\Icons\Enabled\COMMENT_ERROR.png" />
+    <Content Include="Images\Icons\Enabled\Copy.png" />
+    <Content Include="Images\Icons\Enabled\DbImport.png" />
+    <Content Include="Images\Icons\Enabled\DbStart.png" />
+    <Content Include="Images\Icons\Enabled\Delete.png" />
+    <Content Include="Images\Icons\Enabled\DowloadFile.png" />
+    <Content Include="Images\Icons\Enabled\Edit.png" />
+    <Content Include="Images\Icons\Enabled\EditFile.png" />
+    <Content Include="Images\Icons\Enabled\EditOption.png" />
+    <Content Include="Images\Icons\Enabled\Excel.png" />
+    <Content Include="Images\Icons\Enabled\Exit.ico" />
+    <Content Include="Images\Icons\Enabled\ExportXLS.png" />
+    <Content Include="Images\Icons\Enabled\FAQ16.png" />
+    <Content Include="Images\Icons\Enabled\FolderClose.png" />
+    <Content Include="Images\Icons\Enabled\function.png" />
+    <Content Include="Images\Icons\Enabled\GenerateTable.png" />
+    <Content Include="Images\Icons\Enabled\HISTAPRO.png" />
+    <Content Include="Images\Icons\Enabled\ImportField.png" />
+    <Content Include="Images\Icons\Enabled\ImportTable.png" />
+    <Content Include="Images\Icons\Enabled\INFO.png" />
+    <Content Include="Images\Icons\Enabled\Left24.png" />
+    <Content Include="Images\Icons\Enabled\Money.png" />
+    <Content Include="Images\Icons\Enabled\New.png" />
+    <Content Include="Images\Icons\Enabled\Preview.png" />
+    <Content Include="Images\Icons\Enabled\Printer.png" />
+    <Content Include="Images\Icons\Enabled\Right24.png" />
+    <Content Include="Images\Icons\Enabled\SAVE.png" />
+    <Content Include="Images\Icons\Enabled\SAVENEW.png" />
+    <Content Include="Images\Icons\Enabled\SAVEOBS.png" />
+    <Content Include="Images\Icons\Enabled\SAVEOK.png" />
+    <Content Include="Images\Icons\Enabled\Sunat.png" />
+    <Content Include="Images\Icons\Enabled\User.png" />
+    <Content Include="Images\Icons\exportacion-icono-5880.ico" />
+    <Content Include="Images\Icons\media-recorder-icono-9640.ico" />
+    <Content Include="Images\Icons\preferencias-del-sistema-de-windows-icono-4471.ico" />
+    <None Include="Images\Imagenes\Rename - Edit.ico" />
+    <None Include="Images\Imagenes\Refresh.ico" />
+    <None Include="Images\Imagenes\Exit.ico" />
+    <Content Include="Images\Logos\HeaderBkg.png" />
+    <Content Include="Images\Logos\Headermsg.png" />
+    <Content Include="Images\Logos\LoginBkg.jpg" />
+    <Content Include="Images\Logos\Logo.png" />
+    <Content Include="Images\Logos\LogoBkg.jpg" />
+    <Content Include="Images\Logos\n.jpg" />
+    <Content Include="Images\Logos\piemsg.png" />
+    <Content Include="Images\Logos\Version.png" />
+    <None Include="Images\Imagenes\Icons\4\Pencil3.ico" />
+    <None Include="Images\Imagenes\Icons\3\iCandy Junior Toolbar Icons win\The Icons\New Doc.ico" />
+    <None Include="Images\Imagenes\Icons\3\iCandy Junior Toolbar Icons win\The Icons\Advanced Options.ico" />
+    <None Include="Images\Imagenes\Icons\2\Fwdw_icons\grey\ico\001_57.ico" />
+    <None Include="Images\Imagenes\Icons\2\Fwdw_icons\grey\ico\001_18.ico" />
+    <None Include="Images\Imagenes\Icons\1\sharp\ico\shoppingcart.ico" />
+    <None Include="Images\Imagenes\Icons\1\sharp\ico\male.ico" />
+    <None Include="Images\Imagenes\Icons\1\import.ico" />
+    <None Include="Images\Imagenes\Icons\1\export.ico" />
+    <None Include="Images\Imagenes\Icons\1\application.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Sist_Compras\TX_ERP.csproj">
+      <Project>{c02159d8-3ffc-4e3c-ae36-6a37bc8b84ff}</Project>
+      <Name>TX_ERP</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Texfina.BOMnt.Sy.v2.0\Texfina.BOMnt.Sy.v2.0.csproj">
+      <Project>{b6ce3eae-3510-4edf-83ef-01ebbebfc941}</Project>
+      <Name>Texfina.BOMnt.Sy.v2.0</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Texfina.BOQry.Co.v2.0\Texfina.BOQry.Co.v2.0.csproj">
+      <Project>{ad28ca23-5345-49e4-aa02-4951147ca351}</Project>
+      <Name>Texfina.BOQry.Co.v2.0</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Texfina.BOQry.Sy.v2.0\Texfina.BOQry.Sy.v2.0.csproj">
+      <Project>{f2a51a7e-c791-4822-9ee2-a593aa711462}</Project>
+      <Name>Texfina.BOQry.Sy.v2.0</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Texfina.BOQry.TJ.V2.0\Texfina.BOQry.TJ.v2.0.csproj">
+      <Project>{7bdfa3fa-d55c-4e53-a3c0-f0183b9e1dea}</Project>
+      <Name>Texfina.BOQry.TJ.v2.0</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Texfina.Core.Common.v2.0\Texfina.Core.Common.v2.0.csproj">
+      <Project>{cb42fa9b-a4a2-44ce-bcd3-833cefdad36c}</Project>
+      <Name>Texfina.Core.Common.v2.0</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Texfina.Core.Data.v2.0\Texfina.Core.Data.v2.0.csproj">
+      <Project>{bcb3134e-69e4-4604-99d6-e9f564f328b0}</Project>
+      <Name>Texfina.Core.Data.v2.0</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Texfina.Core.Utility\Texfina.Core.Utility.csproj">
+      <Project>{f788a8d8-c9bf-49cf-a6a0-d00e06a7ed23}</Project>
+      <Name>Texfina.Core.Utility</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Texfina.Core.Web.v2.0\Texfina.Core.Web.v2.0.csproj">
+      <Project>{ad24fdee-2ae8-47a0-b08e-5244b4bae03c}</Project>
+      <Name>Texfina.Core.Web.v2.0</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Texfina.DOQry.Sy.v2.0\Texfina.DOQry.Sy.v2.0.csproj">
+      <Project>{0ff4b8ea-0e75-41e1-8b1c-ec5ccf55fbb9}</Project>
+      <Name>Texfina.DOQry.Sy.v2.0</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Texfina.Entity.Co.v2.0\Texfina.Entity.Co.v2.0.csproj">
+      <Project>{56af994c-0a8c-4123-9489-1f0b4d7672a1}</Project>
+      <Name>Texfina.Entity.Co.v2.0</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Texfina.Entity.Sy.v2.0\Texfina.Entity.Sy.v2.0.csproj">
+      <Project>{e7cd0ddd-9c24-4319-9234-9a27a0e2fe67}</Project>
+      <Name>Texfina.Entity.Sy.v2.0</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Texfina.Entity.TJ.V2.0\Texfina.Entity.TJ.V2.0.csproj">
+      <Project>{0eb425e8-d36c-47b5-aa01-3b225055091a}</Project>
+      <Name>Texfina.Entity.TJ.V2.0</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

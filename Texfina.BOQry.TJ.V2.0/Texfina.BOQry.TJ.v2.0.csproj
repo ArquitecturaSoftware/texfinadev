@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7BDFA3FA-D55C-4E53-A3C0-F0183B9E1DEA}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Texfina.BOQry.TJ.v2._0</RootNamespace>
+    <AssemblyName>Texfina.BOQry.TJ.V2.0</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BColor.cs" />
+    <Compile Include="BMuestrasEtiqueta.cs" />
+    <Compile Include="BTejeduria.cs" />
+    <Compile Include="BTejeduriaDet.cs" />
+    <Compile Include="BTejeduriaDetMall.cs" />
+    <Compile Include="BTejeduriaDetProces.cs" />
+    <Compile Include="BTejido.cs" />
+    <Compile Include="Class1.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Texfina.DOQry.TJ.V2.0\Texfina.DOQry.TJ.V2.0.csproj">
+      <Project>{6a8e9ada-dc30-4a07-b0d4-8d76b17ada14}</Project>
+      <Name>Texfina.DOQry.TJ.V2.0</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Texfina.Entity.Co.v2.0\Texfina.Entity.Co.v2.0.csproj">
+      <Project>{56af994c-0a8c-4123-9489-1f0b4d7672a1}</Project>
+      <Name>Texfina.Entity.Co.v2.0</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Texfina.Entity.TJ.V2.0\Texfina.Entity.TJ.V2.0.csproj">
+      <Project>{0eb425e8-d36c-47b5-aa01-3b225055091a}</Project>
+      <Name>Texfina.Entity.TJ.V2.0</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
