@@ -307,9 +307,9 @@ namespace TX_Almacen
             Form childForm = null;
             foreach (Form f in this.MdiChildren)
             {
-                if (f is FrmOrdenPedido_mnt)
+                if (f is frmOrdenPedidoMnt)
                 {
-                    childForm = (FrmOrdenPedido_mnt)f;
+                    childForm = (frmOrdenPedidoMnt)f;
                     break;
                 }
                 else
@@ -328,7 +328,7 @@ namespace TX_Almacen
             }
             else
             {
-                childForm = new FrmOrdenPedido_mnt();
+                childForm = new frmOrdenPedidoMnt();
                 childForm.MdiParent = this;
                 OpenSubForm(childForm);
             }
@@ -384,9 +384,9 @@ namespace TX_Almacen
             Form childForm = null;
             foreach (Form f in this.MdiChildren)
             {
-                if (f is FrmOrdenPedido_mnt)
+                if (f is frmOrdenPedidoMnt)
                 {
-                    childForm = (FrmOrdenPedido_mnt)f;
+                    childForm = (frmOrdenPedidoMnt)f;
                     break;
                 }
                 else
@@ -405,7 +405,7 @@ namespace TX_Almacen
             }
             else
             {
-                childForm = new FrmOrdenPedido_mnt();
+                childForm = new frmOrdenPedidoMnt();
                 childForm.MdiParent = this;
                 OpenSubForm(childForm);
             }
@@ -1114,9 +1114,36 @@ namespace TX_Almacen
             }
         }
 
-        private void consultaToolStripMenuItem_Click(object sender, EventArgs e)
+        private void btnAnticipos_Click(object sender, EventArgs e)
         {
+            Form childForm = null;
+            foreach (Form f in this.MdiChildren)
+            {
+                if (f is frmAnticiposMnt)
+                {
+                    childForm = (frmAnticiposMnt)f;
+                    break;
+                }
+                else
+                {
+                    f.WindowState = FormWindowState.Minimized;
+                    f.Show();
+                }
 
+            }
+
+            if (childForm != null)
+            {
+                childForm.Focus();
+                childForm.BringToFront();
+                childForm.WindowState = FormWindowState.Normal;
+            }
+            else
+            {
+                childForm = new frmAnticiposMnt();
+                childForm.MdiParent = this;
+                OpenSubForm(childForm);
+            }
         }
     }
 }

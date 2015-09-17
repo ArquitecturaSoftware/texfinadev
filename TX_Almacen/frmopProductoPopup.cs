@@ -156,7 +156,7 @@ namespace TX_Almacen
 
                     if (Convert.ToInt16(txt_rollo_dispo.Text) >= Convert.ToInt16(txtnurollo.Text))
                     {
-                        FrmOrdenPedido_mnt frmanterior = (FrmOrdenPedido_mnt)FormParent;
+                        frmOrdenPedidoMnt frmanterior = (frmOrdenPedidoMnt)FormParent;
                         frmanterior.LlenarGrilla(obj, this);
                         this.Close();
                     }
@@ -179,7 +179,7 @@ namespace TX_Almacen
                  if (Convert.ToInt16(txt_rollo_dispo.Text) >= Convert.ToInt16(txtnurollo.Text))
                     {
 
-                        FrmOrdenPedido_mnt frm = (FrmOrdenPedido_mnt)FormParent;
+                        frmOrdenPedidoMnt frm = (frmOrdenPedidoMnt)FormParent;
                         frm.ModGuilla(obj, this);
                         this.Close();
                     }

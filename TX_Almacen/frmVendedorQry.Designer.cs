@@ -1,6 +1,6 @@
 ﻿namespace TX_Almacen
 {
-    partial class FrmVendedor_qry
+    partial class frmVendedorQry
     {
         /// <summary>
         /// Required designer variable.
@@ -31,7 +31,7 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmVendedor_qry));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmVendedorQry));
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.lblnutot = new System.Windows.Forms.ToolStripStatusLabel();
@@ -285,7 +285,7 @@
             this.Name = "FrmVendedor_qry";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Lista de Vendedor";
-            this.Load += new System.EventHandler(this.FrmVendedor_qry_Load);
+            this.Load += new System.EventHandler(this.frmVendedorQry_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.FrmVendedor_qry_KeyDown);
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();

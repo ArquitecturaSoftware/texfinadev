@@ -87,6 +87,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Texfina.BOQry.Ve.v2.0", "Te
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Texfina.DOQry.Ve.v2.0", "Texfina.DOQry.Ve.v2.0\Texfina.DOQry.Ve.v2.0.csproj", "{7A5F26CB-78AE-4DC4-AB11-B970C581FEE2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Texfina.BOMnt.Ve.v2.0", "Texfina.BOMnt.Ve.v2.0\Texfina.BOMnt.Ve.v2.0.csproj", "{C2B8E574-E50F-4315-9480-FDFA02C6B3DD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Texfina.DOMnt.Ve.v2.0", "Texfina.DOMnt.Ve.v2.0\Texfina.DOMnt.Ve.v2.0.csproj", "{867A86FC-8E4E-46F2-B3B4-AC18778031B3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -261,6 +265,14 @@ Global
 		{7A5F26CB-78AE-4DC4-AB11-B970C581FEE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7A5F26CB-78AE-4DC4-AB11-B970C581FEE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7A5F26CB-78AE-4DC4-AB11-B970C581FEE2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C2B8E574-E50F-4315-9480-FDFA02C6B3DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2B8E574-E50F-4315-9480-FDFA02C6B3DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2B8E574-E50F-4315-9480-FDFA02C6B3DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2B8E574-E50F-4315-9480-FDFA02C6B3DD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{867A86FC-8E4E-46F2-B3B4-AC18778031B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{867A86FC-8E4E-46F2-B3B4-AC18778031B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{867A86FC-8E4E-46F2-B3B4-AC18778031B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{867A86FC-8E4E-46F2-B3B4-AC18778031B3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

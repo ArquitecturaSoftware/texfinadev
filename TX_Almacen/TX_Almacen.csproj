@@ -93,6 +93,12 @@
     <Compile Include="AL_Salida_Detalle_rpt01.Designer.cs">
       <DependentUpon>AL_Salida_Detalle_rpt01.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmAnticiposMnt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAnticiposMnt.Designer.cs">
+      <DependentUpon>frmAnticiposMnt.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmAnticiposQry.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -225,11 +231,11 @@
     <Compile Include="frmopProductoPopup.Designer.cs">
       <DependentUpon>frmopProductoPopup.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmOrdenPedido_mnt.cs">
+    <Compile Include="frmOrdenPedidoMnt.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmOrdenPedido_mnt.Designer.cs">
-      <DependentUpon>FrmOrdenPedido_mnt.cs</DependentUpon>
+    <Compile Include="frmOrdenPedidoMnt.Designer.cs">
+      <DependentUpon>frmOrdenPedidoMnt.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmOrdenPedido_qry.cs">
       <SubType>Form</SubType>
@@ -345,11 +351,11 @@
     <Compile Include="FrmTipoGasto_qry.Designer.cs">
       <DependentUpon>FrmTipoGasto_qry.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmVendedor_qry.cs">
+    <Compile Include="frmVendedorQry.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmVendedor_qry.Designer.cs">
-      <DependentUpon>FrmVendedor_qry.cs</DependentUpon>
+    <Compile Include="frmVendedorQry.Designer.cs">
+      <DependentUpon>frmVendedorQry.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmVistaPreviaIngresoEtiqueta_rpt.cs">
       <SubType>Form</SubType>
@@ -385,6 +391,9 @@
     </Compile>
     <EmbeddedResource Include="AL_Salida_Detalle_rpt01.resx">
       <DependentUpon>AL_Salida_Detalle_rpt01.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAnticiposMnt.resx">
+      <DependentUpon>frmAnticiposMnt.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmAnticiposQry.resx">
       <DependentUpon>frmAnticiposQry.cs</DependentUpon>
@@ -457,8 +466,8 @@
     <EmbeddedResource Include="frmopProductoPopup.resx">
       <DependentUpon>frmopProductoPopup.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmOrdenPedido_mnt.resx">
-      <DependentUpon>FrmOrdenPedido_mnt.cs</DependentUpon>
+    <EmbeddedResource Include="frmOrdenPedidoMnt.resx">
+      <DependentUpon>frmOrdenPedidoMnt.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmOrdenPedido_qry.resx">
       <DependentUpon>FrmOrdenPedido_qry.cs</DependentUpon>
@@ -517,8 +526,8 @@
     <EmbeddedResource Include="FrmTipoGasto_qry.resx">
       <DependentUpon>FrmTipoGasto_qry.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmVendedor_qry.resx">
-      <DependentUpon>FrmVendedor_qry.cs</DependentUpon>
+    <EmbeddedResource Include="frmVendedorQry.resx">
+      <DependentUpon>frmVendedorQry.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmVistaPreviaIngresoEtiqueta_rpt.resx">
       <DependentUpon>FrmVistaPreviaIngresoEtiqueta_rpt.cs</DependentUpon>
@@ -653,6 +662,10 @@
     <ProjectReference Include="..\Texfina.BOMnt.Al.v2.0\Texfina.BOMnt.Al.v2.0.csproj">
       <Project>{4d8e3a58-39c5-4d03-8c6d-daf1d59fb09d}</Project>
       <Name>Texfina.BOMnt.Al.v2.0</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Texfina.BOMnt.Ve.v2.0\Texfina.BOMnt.Ve.v2.0.csproj">
+      <Project>{c2b8e574-e50f-4315-9480-fdfa02c6b3dd}</Project>
+      <Name>Texfina.BOMnt.Ve.v2.0</Name>
     </ProjectReference>
     <ProjectReference Include="..\Texfina.BOQry.Co.v2.0\Texfina.BOQry.Co.v2.0.csproj">
       <Project>{ad28ca23-5345-49e4-aa02-4951147ca351}</Project>

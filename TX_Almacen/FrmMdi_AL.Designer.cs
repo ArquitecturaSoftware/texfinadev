@@ -79,6 +79,7 @@
             this.toolStripStatusLabel6 = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripStatusLabel5 = new System.Windows.Forms.ToolStripStatusLabel();
             this.lblfecha = new System.Windows.Forms.ToolStripStatusLabel();
+            this.btnAnticipos = new System.Windows.Forms.ToolStripButton();
             this.menuStrip1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
@@ -177,7 +178,7 @@
             this.consultaToolStripMenuItem.Name = "consultaToolStripMenuItem";
             this.consultaToolStripMenuItem.Size = new System.Drawing.Size(66, 20);
             this.consultaToolStripMenuItem.Text = "Consulta";
-            this.consultaToolStripMenuItem.Click += new System.EventHandler(this.consultaToolStripMenuItem_Click);
+            
             // 
             // Toolstock
             // 
@@ -327,7 +328,8 @@
             this.btnOrdenPedido,
             this.btnStock,
             this.btnStockTF,
-            this.btnLiberarOP});
+            this.btnLiberarOP,
+            this.btnAnticipos});
             this.toolStrip1.Location = new System.Drawing.Point(0, 24);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.Size = new System.Drawing.Size(793, 46);
@@ -540,6 +542,17 @@
             this.lblfecha.Size = new System.Drawing.Size(19, 17);
             this.lblfecha.Text = "    ";
             // 
+            // btnAnticipos
+            // 
+            this.btnAnticipos.Image = ((System.Drawing.Image)(resources.GetObject("btnAnticipos.Image")));
+            this.btnAnticipos.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.btnAnticipos.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnAnticipos.Name = "btnAnticipos";
+            this.btnAnticipos.Size = new System.Drawing.Size(61, 43);
+            this.btnAnticipos.Text = "Anticipos";
+            this.btnAnticipos.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnAnticipos.Click += new System.EventHandler(this.btnAnticipos_Click);
+            // 
             // FrmMdi_AL
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -618,5 +631,6 @@
         private System.Windows.Forms.ToolStripMenuItem ToolstockPorPartida;
         private System.Windows.Forms.ToolStripMenuItem toolsalidaDeInventario;
         private System.Windows.Forms.ToolStripButton btnStockTF;
+        private System.Windows.Forms.ToolStripButton btnAnticipos;
     }
 }

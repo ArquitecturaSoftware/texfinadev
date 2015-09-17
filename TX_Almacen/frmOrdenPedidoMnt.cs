@@ -64,8 +64,8 @@ namespace TX_Almacen
 
         private void btnvendedor_Click(object sender, EventArgs e)
         {
-            FrmVendedor_qry frmps = new FrmVendedor_qry();
-            frmps.pasard += new FrmVendedor_qry.pasar(ejecutarVendedor);
+            frmVendedorQry frmps = new frmVendedorQry();
+            frmps.pasard += new frmVendedorQry.pasar(ejecutarVendedor);
             frmps.ShowDialog();
             txtid_vendedor.Focus();
         }
@@ -450,8 +450,8 @@ namespace TX_Almacen
         {
             if (e.KeyCode == Keys.F1)
             {
-                FrmVendedor_qry frmps = new FrmVendedor_qry();
-                frmps.pasard += new FrmVendedor_qry.pasar(ejecutarVendedor);
+                frmVendedorQry frmps = new frmVendedorQry();
+                frmps.pasard += new frmVendedorQry.pasar(ejecutarVendedor);
                 frmps.ShowDialog();
                 txtid_vendedor.Focus();
             }

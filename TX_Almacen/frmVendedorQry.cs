@@ -12,18 +12,22 @@ using Texfina.Entity.Al;
 
 namespace TX_Almacen
 {
-    public partial class FrmVendedor_qry : Form
+    public partial class frmVendedorQry : Form
     {
-        public FrmVendedor_qry()
+        public frmVendedorQry()
         {
             InitializeComponent();
         }
 
-        private void FrmVendedor_qry_Load(object sender, EventArgs e)
+        private void frmVendedorQry_Load(object sender, EventArgs e)
         {
             psintypesel = 1;
             ListarVendedor();
         }
+
+        
+        /// Iniciallizando Variables para el sistema
+        
         int psintypesel = 1;
         string Id_pers_;
         string ds_pers_;

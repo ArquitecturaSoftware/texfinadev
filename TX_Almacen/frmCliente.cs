@@ -318,6 +318,7 @@ namespace TX_Almacen
                     if (txtCodProv.Text == "")
                     {
                         List<Dato> oListDato = BCliente.Cliente_qry06(wfChgEmpPer.datos.idEmpresa);
+                        
                         if (oListDato.Count > 0)
                         {
                             txtCodProv.Text = oListDato[0].id;
@@ -719,8 +720,8 @@ namespace TX_Almacen
 
         private void btnvendedor_Click(object sender, EventArgs e)
         {
-            FrmVendedor_qry frmps = new FrmVendedor_qry();
-            frmps.pasard += new FrmVendedor_qry.pasar(ejecutarVendedor);
+            frmVendedorQry frmps = new frmVendedorQry();
+            frmps.pasard += new frmVendedorQry.pasar(ejecutarVendedor);
             frmps.ShowDialog();
             txtid_vendedor.Focus();
         }
