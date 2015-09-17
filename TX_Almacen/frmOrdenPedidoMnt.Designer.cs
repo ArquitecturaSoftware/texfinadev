@@ -1,6 +1,6 @@
 ﻿namespace TX_Almacen
 {
-    partial class FrmOrdenPedido_mnt
+    partial class frmOrdenPedidoMnt
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmOrdenPedido_mnt));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmOrdenPedidoMnt));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -1342,7 +1342,7 @@
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Orden de Pedido";
-            this.Load += new System.EventHandler(this.FrmOrdenPedido_mnt_Load);
+            this.Load += new System.EventHandler(this.frmOrdenPedidoMnt_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.FrmOrdenPedido_mnt_KeyDown);
             this.toolStrip2.ResumeLayout(false);
             this.toolStrip2.PerformLayout();

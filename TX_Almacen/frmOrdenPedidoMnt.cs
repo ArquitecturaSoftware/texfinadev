@@ -17,9 +17,9 @@ using Texfina.Entity.Sy;
 
 namespace TX_Almacen
 {
-    public partial class FrmOrdenPedido_mnt : Form
+    public partial class frmOrdenPedidoMnt : Form
     {
-        public FrmOrdenPedido_mnt()
+        public frmOrdenPedidoMnt()
         {
             InitializeComponent();
 
@@ -231,7 +231,7 @@ namespace TX_Almacen
 
         }
 
-        private void FrmOrdenPedido_mnt_Load(object sender, EventArgs e)
+        private void frmOrdenPedidoMnt_Load(object sender, EventArgs e)
         {
             Permisos();
         }
